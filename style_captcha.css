@@ -1,0 +1,121 @@
+html {
+    background-color: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/images/void-space.webp);
+}
+
+.game-container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.game-area {
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#timing-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-image: url(/images/void-space.webp);
+    background-size: cover;
+    border-top: 2px solid white;
+    animation: moveBackground 120s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 50% 0%; 
+    }
+    99% {
+        background-position: 50% 100%; 
+    }
+    100% {
+        background-position: 50% 0%; 
+    }
+}
+
+.letter {
+    position: absolute;
+    color:black;
+    top: -30px;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: descend linear forwards;
+    background-color: white;
+    border: solid rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+@keyframes break {
+    0% {
+        background-image: url(/images/frame_1.jpg);
+        background-size: 100%;
+        transform: scale(1);
+        opacity: 1;
+        background-clip: none;
+        position: absolute;
+        z-index: 10;
+    }
+    25%{
+        background-image: url(/images/frame_2.jpg);
+        background-size: 100%;
+        background-clip: none;
+        position: absolute;
+        z-index: 10;
+    }
+    50% {
+        transform: translateX(-10px) rotateY(10deg);
+        opacity: 0.5;
+        background-image: url(/images/frame_3.jpg);
+        background-size: 100%;
+        background-clip: none;
+        position: absolute;
+        z-index: 10;
+    }
+    75%{
+        background-image: url(/images/frame_4.jpg);
+        background-size: 100%;
+        background-clip: none;
+        position: absolute;
+        z-index: 10;
+    }
+    100% {
+        transform: translateX(10px) rotateY(-10deg);
+        opacity: 0;
+        background-image: url(/images/frame_5.jpg);
+        background-size: 100%;
+        background-clip: none;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
+.break {
+    display: inline-block;
+    animation: break 0.5s forwards;
+}
+
+
+
+
+

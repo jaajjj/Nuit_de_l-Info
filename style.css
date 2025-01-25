@@ -1,0 +1,651 @@
+/* Styles globaux */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #3ec5ff, #083150);
+    color: #ffffff;
+    width: 100%;
+}
+
+/* Header sticky */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 30, 45, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo et nom dans le header */
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo img {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(5px 5px 10px #0000007c);
+
+}
+
+.header-logo h1 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0;
+    text-shadow: black 0px 0 30px;
+}
+
+/* Icône de menu */
+.menu-bar {
+    cursor: pointer;
+}
+
+
+.menu-bar img {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    filter: drop-shadow(5px 5px 10px #0000007c);
+
+}
+
+/* Menu latéral */
+.sidebar {
+    position: fixed;
+    display: flex;
+    top: 0px; /* Positionné sous l'icône du menu */
+    width: 100%; /* Largeur du menu */
+    background: #152a3f;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out; /* Animation fluide */
+    padding-top: 60px;
+    z-index: 99;
+    transform: translateY(-100%); /* Cache le menu par défaut */
+    justify-content: space-around;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    
+}
+
+/* Liste des éléments du menu */
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 20px;
+
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    transform: scale(1.1);
+}
+
+.sidebar.active {
+    transform: translateY(0); /* Fait apparaître le menu en le faisant descendre */
+}
+
+/* Section styles */
+main section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.24) 2px 2px 20px;
+
+}
+
+main section h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.fade-in {
+    opacity: 0; 
+    transform: translateY(30px); /* On déplace légèrement l'élément pour ajouter un effet de mouvement */
+    transition: opacity 1.3s ease-out, transform 1s ease-out; /* L'effet de fondu et de mouvement */
+}
+
+.fade-in.visible {
+    opacity: 1; /* L'élément devient visible */
+    transform: translateY(0); /* L'élément revient à sa position normale */
+}
+
+.interactive{
+    display: flex;
+}
+
+.intro-sous-titre {
+    font-size: 1.2em;
+    line-height: 0.5;
+    margin-bottom: 100px;
+    color: rgb(230, 253, 255);
+}
+
+.chapeau{
+    position: absolute;
+    width: 4%;
+    right: 2%;
+    top: 0.2rem;
+    rotate: 10deg;
+    cursor: pointer;
+    filter:drop-shadow( 0px -5px 10px rgba(0, 0, 0, 0.2));
+
+}
+
+/* Footer */
+#action {
+    background-color: #152a3f;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid #1abc9c;
+    margin-top: 40px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du titre */
+#action h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+/* Style du bouton */
+.cta-button {
+    padding: 15px 30px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #16a085;
+    transform: scale(1.1);
+}
+
+/* Responsivité : pour les écrans plus petits */
+@media (max-width: 768px) {
+    #action {
+        padding: 30px 15px;
+    }
+
+    #action h2 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+
+.square{
+    width: 80%; 
+    height: 350px;
+    left: 0;    
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 0 100px 100px 0;
+    filter: blur();
+    padding-bottom: 40px;
+    /*border: solid red;*/
+}
+.corps-eau{
+    /*border: solid blue;*/
+    display: flex;
+    background-color: #06283848;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 200px;
+
+}
+.square h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, 0.24) 2px 2px 20px;
+}
+
+.square p{
+    color: #152a3f;
+    margin: 40px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+.image-corps-eau{
+    /*border: green solid;*/
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+}
+.image-corps-eau h2{
+    font-size: 40px;
+    margin-top:-18%;
+}
+
+.corps-eau img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 10px #0000007c);
+}
+.interactive1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.selectable{
+    border: 3px solid rgb(56, 56, 56); /* Pas de bordure au départ */
+    background-color: rgba(128, 128, 128, 0.192);
+}
+
+.interactive1 img {
+    width: 100px; /* Taille par défaut des images */
+    margin: 10px;
+    border-radius: 10px; /* Ajout d'un arrondi pour une esthétique */
+    transition: border-color 0.3s ease, transform 0.2s ease; /* Animation fluide */
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 10px #0000007c);
+
+}
+
+.interactive1 img:hover {
+    transform: scale(1.1); /* Zoom sur hover */
+}
+
+.interactive1 img.correct {
+    border-color: green; /* Bordure verte pour l'image correcte */
+    background-color: rgba(5, 211, 5, 0.3); /* Fond légèrement vert */
+}
+
+.interactive1 img.incorrect {
+    border-color: red; /* Bordure rouge pour les images incorrectes */
+    background-color: rgba(255, 0, 0, 0.2); /* Fond légèrement rouge */
+}
+
+.description-box {
+    width: 275px;
+    margin-right: 100px;
+    padding: 30px;
+    background-color: #ffffff67;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #040f2c;
+}
+
+.description-box p {
+    margin: 0;
+}
+
+.poumon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #06283848;
+    padding: 100px 0;
+    position: relative;
+}
+
+.box-terre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%; /* Ajustez la largeur selon vos besoins */
+    text-align: center;
+    margin-left: 50px;
+}
+
+.terre-image {
+    width: 70%;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+    border-radius: 50%; /* Donne une forme circulaire à l'image */
+    margin-bottom: 20px;
+}
+
+.merci-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background: linear-gradient(90deg, #1abc9c, #16a085);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.merci-button:hover {
+    background: linear-gradient(90deg, #16a085, #1abc9c);
+    transform: scale(1.1);
+}
+
+
+.square2{
+    width: 45%; 
+    height: 500px;
+    left: 0;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 100px 0 0 100px;
+    filter: blur();
+    padding: 40px;
+    /*border: solid red;*/
+}
+
+.square2 p{
+    color: #152a3f;
+    font-size:1.1em;
+    margin: 40px;
+    font-weight: 400;
+    text-align: justify;
+}
+.animation-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: floatUp 2s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px) scale(0.5);
+        opacity: 0;
+    }
+}
+
+.terre-image.animated {
+    animation: zoomEarth 1s ease-in-out;
+}
+
+@keyframes zoomEarth {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.titreGraph{ 
+    width: 605px;
+    height: 52px;
+    flex-shrink: 0; 
+    color: #ffffff;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Pourcentage{
+    margin: -2%;
+    height: 30%;
+    display: flex;
+    
+}
+
+.pourcent1{
+    margin-right: 20px;
+    width: 80px;
+    color: #e0fff8;    
+    font-size: 30px;
+}
+.pourcent2{
+    font-size: 30px;
+    width: 100px;
+    color: rgb(223, 255, 252); 
+}
+
+.Graph{
+    filter: drop-shadow(5px 5px 10px #0000003f);
+
+    display: flex;
+    border-radius: 100px;
+    border: 2px solid #8df0fdcb;
+    border-width: 10px;
+    background: #FFF;
+    width: 25%;
+    height: 71px;
+    flex-shrink: 0;
+}
+.Graph1{
+    
+    background:#008809;
+    width: 26%;
+    height: 71px;
+    flex-shrink: 0;
+
+}
+.Graph2{
+    width: 50%;
+    height: 71px;
+    flex-shrink: 0;
+    background: #3192d3;
+    border-radius: 100px 0 0 100px ;
+
+    
+}
+.oxygène{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+
+}
+.iconeGraph{
+    margin-bottom: -20%;
+    filter: drop-shadow(5px 5px 10px #0000007c);
+    display:flex;
+    justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 6%;
+    transition: transform 0.2s ease;
+}
+
+.iconeGraph:hover{
+    transform: scale(1.02);
+}
+
+.legende1{
+    display: flex;
+    align-items: center;
+}
+.squareL1{
+    filter: drop-shadow(5px 5px 10px #0000003f);
+
+    border: rgb(139, 232, 248) solid;
+    margin:10px;
+    background-color: hsl(204, 69%, 49%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.legende2{    
+    display: flex;
+    align-items: center;
+}
+.squareL2{
+    filter: drop-shadow(5px 5px 10px #0000003f);
+
+    border: rgb(119, 241, 129) solid;
+    margin:10px;
+    background-color: #008809;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+
+.square3{
+    justify-self: center;
+    width: 70%; 
+    height: 160px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 50px ;
+    filter: blur();
+    padding: 40px;
+    /*border: solid red;*/
+    z-index: 0;
+}
+.Page1{
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(0, 217, 255);
+    margin-bottom: -5%;
+    border-radius: 100px;
+    z-index: 1;
+}
+.square3 h3{
+    text-align: center;
+    font-size: 3    rem;
+    font-weight: 600;
+}
+
+
+.quiz-container{
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    padding: 20px;
+}
+/* Styles pour le quiz */
+.quiz {
+    background-color: #083150;
+    color: #ffffff;
+    padding: 30px;
+    
+    border-radius: 15px;
+  }
+  
+  .quiz h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .question p {
+    background-color: #0000003f;
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  .question label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 10%;
+  }
+  
+  button.cta-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #1abc9c;
+    border-radius: 25px;
+    font-size: 1.2em;
+  }
+  
+  button.cta-button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+  }
+  
+  /* Feedback dynamique */
+  .quiz-feedback {
+    width: 30%;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #1abc9c;
+    border-radius: 15px;
+    display: none; /* Caché initialement */
+  }
+  
+  .feedback.correct {
+    background-color: #4CAF50;
+  }
+  
+  .feedback.incorrect {
+    background-color: #f44336;
+  }
+  
+  .feedback-message {
+    font-weight: bold;
+  }
+  
+  .feedback-details {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  

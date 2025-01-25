@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background:rgba(95, 88, 88, 0.7) url(/src/image/fondCalendrier.png);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #2e718b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#button9{
+    position: fixed;
+    top: 50%;
+    right: -60px; /* Half the width of the button */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: right 0.3s ease;
+    z-index: 10;
+}
+
+#button9 .grinch{
+    width: 50px;
+    height: 50px;
+}
+
+#button9:hover{
+    right: -25px;
+}
+
+footer {
+    background: #2e718b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    background:rgba(95, 88, 88, 0.7) url(src/image/R.jpg);
+    background-blend-mode:darken;
+
+}
+
+.flocon {
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0;
+    color:white;
+    animation: infinite fall linear;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+    70% {
+        opacity: 0;
+        top: 90vh; /* L'élément tombe jusqu'au bas de l'écran */
+    }
+}
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+td {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border: 1px solid #000;
+}
+td.inactive {
+    background-color: #ccc;
+}
+#clues {
+    max-width: 600px;
+    text-align: left;
+    font-size: 10px;
+}
+#clues ul {
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:green;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#button9 {
+    padding: 10px 20px;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#button23,#button24{
+    background-color: rgb(115, 28, 28);
+}

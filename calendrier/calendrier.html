@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un seul pop-up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur notre site dédié à l'écologie</h1>
+        <div id="grinch"><div>
+    </header>
+    <main>
+        <script>
+            let grinch = false;
+            let cookieArr = document.cookie.split(";");
+    
+            for(let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split("=");
+                
+                if("Grinch" == cookiePair[0].trim() )grinch = true;
+            }
+
+            if(!grinch) document.cookie = "Grinch=0;";
+        </script>
+        <h2>Choisissez un élément à afficher</h2>
+                
+        <button id="button1">Jour 1</button><br><br>
+        <button id="button2">Jour 2</button>
+        <button id="button3">Jour 3</button><br><br>
+        <button id="button4">Jour 4</button>
+        <button id="button5">Jour 5</button>
+        <button id="button6">Jour 6</button><br><br>
+        <button id="button7">Jour 7</button>
+        <button id="button8">Jour 8</button>
+        <button id="button9"> <img class="grinch" src="src/image/Grinch1.png" alt="image du grinch"> </button>
+        <button id="button10">Jour 10</button>
+        <button id="button11">Jour 11</button><br><br>
+        <button id="button12">Jour 12</button>
+        <button id="button13">Jour 13</button>
+        <button id="button14">Jour 14</button>
+        <button id="button15">Jour 15</button>
+        <button id="button16">Jour 16</button><br><br>
+        <button id="button17">Jour 17</button>
+        <button id="button18">Jour 18</button>
+        <button id="button19">Jour 19</button>
+        <button id="button20">Jour 20</button>
+        <button id="button21">Jour 21</button>
+        <button id="button22">Jour 22</button><br><br>
+        <button id="button23">Jour 23</button>
+        <button id="button24">Jour 24</button>
+
+        
+
+        <!-- Pop-Up global -->
+        <div id="modal">
+        </div>
+
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 - Tous droits réservés.</p>
+    </footer>
+    
+    
+</body>
+</html>

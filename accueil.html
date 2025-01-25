@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symbiose marine</title>
+  <link rel="icon" type="image/x-icon" href="public/images/LogoBaleine.png">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="sticky-header">
+    <div class="menu-bar">
+      <img src="public/images/menu_icon.png" alt="Menu" id="menu-toggle">
+    </div>
+    <div class="header-logo">
+      <img src="public/images/LogoBaleine.png" alt="Logo">
+      <h1>Symbiose marine</h1>
+    </div>
+    <a class="noel" onclick="alert('Si vous répondez correctement au quiz, vous aurez le droit de rencontrer Baleine-Land')">
+      <img src="public/images/chapeau.png" alt="chapeau de noel" class="chapeau">
+    </a>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#intro">Accueil</a></li>
+      <li><a href="#corps-eau">Corps</a></li>
+      <li><a href="#poumon">Poumon</a></li>
+      <li><a href="#oxygène">Oxygène</a></li>
+      <li><a href="#solution">Solutions</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#action">Agissez</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro" class="intro">
+      <h2 class="fade-in">Vous êtes à 60% un Océan</h2>
+      <p class="intro-sous-titre">Bon, pas vraiment, mais c'est l'idée 😅</p>
+    </section>
+    
+  
+
+    <section id="corps-eau" class="corps-eau">
+      <div class="square">
+        <h2>Y'a quoi dans notre corps ?</h2>
+        <p>"Saviez-vous que vous êtes une sorte de verre d'eau ? 
+          1Oui, vous avez bien lu, environ 60 % de votre corps est composé d'eau. Si vous enlevez tout ce qui est os, muscles, organes et le reste (ce qui, soyons honnêtes, est plutôt important), il vous reste… de l'eau. Beaucoup d'eau."</p>
+      </div>
+      <div class="image-corps-eau">
+        <img src="public/images/hommeEau.png" alt="corps d'homme rempli d'eau">
+        <h2>60%</h2>
+      </div>
+      <div class="interactive1">
+        <div class="image-container">
+          <img src="public/images/globule.png" class="selectable" alt="Globules" id="globules">
+          <img src="public/images/cellules.png" class="selectable" alt="Cellules" id="cellules">
+          <img src="public/images/os.png" class="selectable" alt="Os" id="os">
+        </div>
+        <div class="description-box">
+          <img src="public/images/LogoBaleine.png" alt="Logo">
+          <p id="description-text">Qu'est ce qui contient le plus d'eau dans le corps humain?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="poumon" class="poumon">
+      <div class="box-terre">
+        <div class="animation-container">
+          <img src="public/images/terre.png" alt="Terre" class="terre-image">
+          <div id="particle-container"></div>
+        </div>
+        <button class="merci-button" id="merci-button">Merci pour l'Oxygène !</button>
+      </div>
+      <div class="square2">
+        <h2>L'océan, le poumon de la Terre</h2>
+        <p>
+          Saviez-vous que plus de 50 % de l'oxygène que nous respirons provient des océans ? Ce rôle vital est assuré
+          par le phytoplancton, de minuscules organismes marins capables de transformer le dioxyde de carbone (CO₂) en
+          oxygène grâce à la photosynthèse. L’océan ne se limite pas à produire de l’oxygène : il agit aussi comme un
+          immense réservoir de carbone, absorbant près d’un quart des émissions mondiales de CO₂, contribuant ainsi à
+          limiter le réchauffement climatique.
+        </p>
+      </div>
+    </section>
+    <div class="iconeGraph">
+      <img src="public/images/vague.png" alt="vague">
+      <img src="public/images/foret.png" alt="arbre">
+    </div>
+
+    <section class="oxygène" id="oxygène">
+      <div class="titreGraph"> La production d'oxygène sur terre </div>
+      <div class="Pourcentage">
+        <div class="pourcent1">
+          <p>50%</p>
+        </div>
+        <div class="pourcent2">
+          <p>26%</p>
+        </div>
+      </div>
+
+      <div class="Graph">
+        <div class="Graph2"></div>
+        <div class="Graph1"></div>
+      </div>
+      <div class="legende1">
+        <div class="squareL1"></div>
+        <p> Oxygène produit par les oceans dans le monde</p>
+      </div>
+      <div class="legende2">
+        <div class="squareL2"></div>
+        <p>Oxygène produit par les foret dans le monde</p>
+      </div>
+    </section>
+
+    <section id="solution" class="solution">
+      <div class="Page1">
+        <h2>Les Solutions</h2>
+      </div>
+      <div class="square3">
+        <h3>Filtration et Capture du Carbone </h3>
+        <p> La capture et le stockage du carbone (CCS) est une technologie qui permet de capter le CO₂ émis par les
+          industries et de l’empêcher d'entrer dans l’atmosphère. Ces technologies sont utilisées pour décarboner des
+          secteurs difficiles à décarboner, comme l'industrie lourde et le transport maritime.</p>
+      </div>
+    </section>
+
+  </main>
+  <div class="quiz-container">
+    <section id="quiz" class="quiz">
+      <h2>Testez vos connaissances !</h2>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. Quelle technologie est utilisée par le navire "Race for Water Odyssey" pour réduire son empreinte
+            carbone ?</p>
+          <label>
+            <input type="radio" name="q1" value="a"> a) Énergie éolienne et nucléaire
+          </label><br>
+          <label>
+            <input type="radio" name="q1" value="b"> b) Énergie solaire et hydrogène
+          </label><br>
+          <label>
+            <input type="radio" name="q1" value="c"> c) Énergie géothermique et charbon
+          </label>
+        </div>
+        <div class="question">
+          <p>2. Le "Race for Water Odyssey" est un navire qui parcourt le monde. Quelle est sa mission principale ?</p>
+          <label>
+            <input type="radio" name="q2" value="a"> a) Sensibiliser aux enjeux du changement climatique et à la
+            pollution plastique
+          </label><br>
+          <label>
+            <input type="radio" name="q2" value="b"> b) Transporter des ressources naturelles pour les pays en
+            développement
+          </label><br>
+          <label>
+            <input type="radio" name="q2" value="c"> c) Tester des solutions de décarbonation pour les transports
+            maritimes
+          </label>
+        </div>
+        <div class="question">
+          <p>3. Quel est le principal objectif du projet "Race for Water" ?</p>
+          <label>
+            <input type="radio" name="q3" value="a"> a) Devenir le premier navire autonome au monde
+          </label><br>
+          <label>
+            <input type="radio" name="q3" value="b"> b) Sensibiliser le public aux défis de l’eau et de la pollution
+            plastique
+          </label><br>
+          <label>
+            <input type="radio" name="q3" value="c"> c) Organiser des courses en mer pour promouvoir les technologies
+            écologiques
+          </label>
+        </div>
+        <div class="question">
+          <p>4. Quel est le rôle de l'hydrogène dans le projet "Race for Water" ?</p>
+          <label>
+            <input type="radio" name="q4" value="a"> a) Produire de l'énergie pour le navire
+          </label><br>
+          <label>
+            <input type="radio" name="q4" value="b"> b) Limiter la consommation d'eau douce à bord
+          </label><br>
+          <label>
+            <input type="radio" name="q4" value="c"> c) Dépolluer les océans en capturant les plastiques
+          </label>
+        </div>
+        <div class="question">
+          <p>5. Quel est l'objectif principal du projet "Race for Water" en termes de sensibilisation ?</p>
+          <label>
+            <input type="radio" name="q5" value="a"> a) Sensibiliser à l'importance de l'énergie solaire
+          </label><br>
+          <label>
+            <input type="radio" name="q5" value="b"> b) Sensibiliser à la pollution plastique et aux défis liés à l'eau
+          </label><br>
+          <label>
+            <input type="radio" name="q5" value="c"> c) Promouvoir les énergies fossiles comme solution de transport
+          </label>
+        </div>
+
+        <div class="question">
+          <p>6. Quel type de technologie est utilisé par le "Race for Water Odyssey" pour se propulser ?</p>
+          <label>
+            <input type="radio" name="q6" value="a"> a) Voiles solaires et hydrogène
+          </label><br>
+          <label>
+            <input type="radio" name="q6" value="b"> b) Moteurs à combustion interne et énergie éolienne
+          </label><br>
+          <label>
+            <input type="radio" name="q6" value="c"> c) Voiles classiques et moteurs à gaz naturel
+          </label>
+        </div>
+
+        <div class="question">
+          <p>7. Quelle est la particularité du navire "Race for Water Odyssey" dans sa manière de produire de l'énergie
+            ?</p>
+          <label>
+            <input type="radio" name="q7" value="a"> a) Il utilise un mix de sources d'énergie renouvelables pour sa
+            propulsion et sa consommation
+          </label><br>
+          <label>
+            <input type="radio" name="q7" value="b"> b) Il utilise uniquement l'énergie nucléaire pour se propulser
+          </label><br>
+          <label>
+            <input type="radio" name="q7" value="c"> c) Il n'a pas besoin d'énergie et fonctionne sans source d'énergie
+            externe
+          </label>
+        </div>
+
+        <div class="question">
+          <p>8. Qu'est-ce qui distingue le "Race for Water Odyssey" des autres navires en termes de mission ?</p>
+          <label>
+            <input type="radio" name="q8" value="a"> a) Il est conçu pour parcourir le monde tout en produisant de
+            l'énergie durable et en luttant contre la pollution plastique
+          </label><br>
+          <label>
+            <input type="radio" name="q8" value="b"> b) Il navigue principalement pour participer à des courses
+            maritimes de grande envergure
+          </label><br>
+          <label>
+            <input type="radio" name="q8" value="c"> c) Il est utilisé exclusivement pour le transport de marchandises à
+            travers les océans
+          </label>
+        </div>
+
+        <button type="submit" id="submitBtn" class="cta-button">Vérifier les réponses</button>
+      </form>
+
+      <div id="quizFeedback" class="quiz-feedback"></div>
+    </section>
+  </div>
+  </main>
+  <section id="action" class="action">
+    <h2>Agissez avec nous</h2>
+    <button class="cta-button" onclick="window.location.href='https://www.nuitdelinfo.com/'">Rejoignez-nous</button>
+
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

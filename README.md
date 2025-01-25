@@ -2,7 +2,7 @@
 
 Ce projet est un starter HTML. Il utilise Vite JS pour un développement rapide et moderne.
 Ce projet a été réalisé lors de la Nuit de l'informatique. Cet événement regroupe près de 1500 participants regroupés en plusieurs équipes.
-L'objectif de cette année : Réaliser un site interactif qui met en avant la décarbonisation des océans. Un projet que moi et mon équipe composée de 8 personnes avons mené à bien jusqu'à remporter le premier prix dans l'objectif suivant : Cacher un "easter egg" dans lequel il y aura un calendrier de l'avant mettant en avant le Grinch.
+L'objectif de cette année : Réaliser un site interactif qui met en avant la décarbonisation des océans. Un projet que moi et mon équipe composée de 9 personnes avons mené à bien jusqu'à remporter le premier prix dans l'objectif suivant : Cacher un "easter egg" dans lequel il y aura un calendrier de l'avant mettant en avant le Grinch.
 
 
 ## Prérequis
@@ -57,5 +57,16 @@ Les fichiers de sortie seront générés dans le répertoire `dist`.
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-## Auteur
+## Auteur de pack starter-html : 
 Guillaume Marcel
+
+## Auteur du projet : 
+Sami Hajadi (moi)
+Soret Camille
+Tricot Alexandre
+Lebois Dylan
+Gourdelier Lucas
+Said Sidi Houssein
+Marhadour Matthieu
+Lissonnet Maxence
+Bardin Hugo

@@ -1,21 +1,9 @@
 # Starter HTML basé sur Vite JS
 
 Ce projet est un starter HTML. Il utilise Vite JS pour un développement rapide et moderne.
+Ce projet a été réalisé lors de la Nuit de l'informatique. Cet événement regroupe près de 1500 participants regroupés en plusieurs équipes.
+L'objectif de cette année : Réaliser un site interactif qui met en avant la décarbonisation des océans. Un projet que moi et mon équipe composée de 8 personnes avons mené à bien jusqu'à remporter le premier prix dans l'objectif suivant : Cacher un "easter egg" dans lequel il y aura un calendrier de l'avant mettant en avant le Grinch.
 
-## Structure du projet
-
-```
-starter-html/
-├── index.html
-├── src/
-│   ├── main.js
-│   ├── style.css
-├── public/
-│   └── assets/
-│       └── logo.png
-├── package.json
-└── vite.config.js
-```
 
 ## Prérequis
 
